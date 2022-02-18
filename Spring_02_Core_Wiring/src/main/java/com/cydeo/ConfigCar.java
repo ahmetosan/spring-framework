@@ -13,12 +13,21 @@ public class ConfigCar {
         c.setMake("Honda");
         return c;
     }
+//    direct wiring
+    //    @Bean
+//        Person person(){
+//        Person p = new Person();
+//        p.setName("Mike");
+//        p.setCar(car());
+//        return p;
+//    }
+
+//AutoWiring
     @Bean
-    Person person(){
+    Person person(Car car){
         Person p = new Person();
         p.setName("Mike");
-        p.setCar(car());
+        p.setCar(car);
         return p;
     }
-
 }
