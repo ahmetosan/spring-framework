@@ -9,4 +9,3 @@ public class Selenium {
         System.out.println("Total teaching hours : 200");
     }
 }
-
