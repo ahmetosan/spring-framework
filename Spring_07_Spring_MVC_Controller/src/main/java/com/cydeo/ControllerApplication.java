@@ -1,4 +1,4 @@
-package com.cydeo.spring_07_spring_mvc_controller;
+package com.cydeo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
