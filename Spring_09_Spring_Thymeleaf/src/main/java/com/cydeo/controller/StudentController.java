@@ -6,11 +6,11 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 @Controller
-@RequestMapping("/student")
+@RequestMapping("student")
 
 public class StudentController {
 
-    @RequestMapping("/register")
+    @RequestMapping("register")
     public String register(Model model){
 
 
@@ -19,6 +19,12 @@ public class StudentController {
 
         return "student/register";
 
+    }
+
+    @RequestMapping("/welcome")
+    public String info(){
+
+        return "student/welcome";
     }
 
 }
