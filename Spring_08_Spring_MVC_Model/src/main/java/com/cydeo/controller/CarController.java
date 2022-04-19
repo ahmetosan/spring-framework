@@ -31,7 +31,7 @@ public class CarController {
 
     @RequestMapping("/info3/{make}")
     public String carInfo3(@PathVariable String make, @PathVariable Integer year, Model model){
-       model.addAttribute("make",make);
+        model.addAttribute("make",make);
         model.addAttribute("year",year);
         return "car/car-info";
     }
